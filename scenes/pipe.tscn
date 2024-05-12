@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://b5gkin3a8mtkt"]
+
+[ext_resource type="Texture2D" uid="uid://qhjl2n56v1ax" path="res://assets/sprites/world_tileset.png" id="1_6ck22"]
+[ext_resource type="Script" path="res://scripts/pipe.gd" id="1_adxd1"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uinjm"]
+size = Vector2(14.7321, 40.3226)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_24dhh"]
+
+[node name="Pipe" type="Area2D"]
+scale = Vector2(2.24, 2.48)
+collision_layer = 3
+script = ExtResource("1_adxd1")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_6ck22")
+region_enabled = true
+region_rect = Rect2(1, 49, 14, 40)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.223214, 1.15364e-06)
+shape = SubResource("RectangleShape2D_uinjm")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+scale = Vector2(0.72, 2)
+
+[node name="ScoreCountArea" type="Area2D" parent="."]
+position = Vector2(0, 28.629)
+scale = Vector2(0.138412, 0.619305)
+collision_layer = 0
+collision_mask = 10
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ScoreCountArea"]
+position = Vector2(0, 4.76837e-06)
+scale = Vector2(1.55404, 1.27727)
+shape = SubResource("RectangleShape2D_24dhh")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
+[connection signal="body_entered" from="ScoreCountArea" to="." method="_on_score_count_area_body_entered"]

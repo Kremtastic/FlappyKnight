@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://h36rcqqmd2gj"]
+
+[ext_resource type="Script" path="res://scripts/retry_button.gd" id="1_jfn7x"]
+[ext_resource type="FontFile" uid="uid://dkyhand71eyt6" path="res://assets/fonts/PixelOperator8-Bold.ttf" id="1_ta55j"]
+
+[node name="end_screen" type="Control"]
+top_level = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="."]
+top_level = true
+layout_mode = 0
+offset_left = -34.0
+offset_top = 15.0
+offset_right = 104.0
+offset_bottom = 38.0
+theme_override_fonts/font = ExtResource("1_ta55j")
+text = "Game Over"
+
+[node name="retry" type="Button" parent="."]
+process_mode = 2
+layout_mode = 0
+offset_left = 7.0
+offset_top = 42.0
+offset_right = 95.0
+offset_bottom = 73.0
+scale = Vector2(0.617074, 0.718135)
+theme_override_fonts/font = ExtResource("1_ta55j")
+text = "RETRY"
+script = ExtResource("1_jfn7x")
+
+[connection signal="pressed" from="retry" to="retry" method="_on_pressed"]
