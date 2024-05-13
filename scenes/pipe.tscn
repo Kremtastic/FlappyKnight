@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://b5gkin3a8mtkt"]
+[gd_scene load_steps=7 format=3 uid="uid://b5gkin3a8mtkt"]
 
 [ext_resource type="Texture2D" uid="uid://qhjl2n56v1ax" path="res://assets/sprites/world_tileset.png" id="1_6ck22"]
 [ext_resource type="Script" path="res://scripts/pipe.gd" id="1_adxd1"]
+[ext_resource type="AudioStream" uid="uid://d4buoqksgreaa" path="res://assets/sounds/coin.wav" id="3_eiyj1"]
+[ext_resource type="AudioStream" uid="uid://brvsaerlvxrm0" path="res://assets/sounds/hurt.wav" id="4_kbkys"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_uinjm"]
 size = Vector2(14.7321, 40.3226)
@@ -35,6 +37,15 @@ collision_mask = 10
 position = Vector2(0, 4.76837e-06)
 scale = Vector2(1.55404, 1.27727)
 shape = SubResource("RectangleShape2D_24dhh")
+
+[node name="PickupSound" type="AudioStreamPlayer2D" parent="ScoreCountArea"]
+stream = ExtResource("3_eiyj1")
+bus = &"SFX"
+
+[node name="HitSound" type="AudioStreamPlayer2D" parent="ScoreCountArea"]
+scale = Vector2(1, 1)
+stream = ExtResource("4_kbkys")
+bus = &"SFX"
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

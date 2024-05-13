@@ -24,6 +24,7 @@ func _physics_process(delta):
 	# Handle jump.
 	if Input.is_action_just_pressed("ui_accept"):
 		velocity.y = JUMP_VELOCITY
+		$Jump.play()
 
 	move_and_slide()
 
