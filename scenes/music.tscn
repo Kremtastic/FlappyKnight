@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://gko3humh41c8"]
+
+[ext_resource type="AudioStream" uid="uid://ltrd8d8iswr2" path="res://assets/music/my_crappy_selfmade_song.mp3" id="1_lr0vt"]
+
+[node name="Music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_lr0vt")
+autoplay = true
+bus = &"Music"

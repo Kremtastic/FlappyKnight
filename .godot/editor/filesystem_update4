@@ -1,3 +1,4 @@
 res://scenes/game.tscn
 res://scenes/pipe.tscn
 res://scripts/pipe.gd
+res://default_bus_layout.tres
