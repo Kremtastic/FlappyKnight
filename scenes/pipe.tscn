@@ -43,7 +43,6 @@ stream = ExtResource("3_eiyj1")
 bus = &"SFX"
 
 [node name="HitSound" type="AudioStreamPlayer2D" parent="ScoreCountArea"]
-scale = Vector2(1, 1)
 stream = ExtResource("4_kbkys")
 bus = &"SFX"
 
