@@ -1,7 +1,7 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1715636129
+::res://::1719593799
 default_bus_layout.tres::AudioBusLayout::5046095208557109805::1715634527::0::1::::<><>::
-export_presets.cfg::TextFile::-1::1715635645::0::1::::<><>::
+export_presets.cfg::TextFile::-1::1715636500::0::1::::<><>::
 FlappyKnight.png::CompressedTexture2D::6636434889273609914::1715632718::1715632718::1::::<><>::
 icon.svg::CompressedTexture2D::3647994679251281036::1715632718::1715632718::1::::<><>::
 README.md::TextFile::-1::1715632718::0::1::::<><>::
@@ -27,13 +27,13 @@ platforms.png::CompressedTexture2D::1998871347446057368::1715632718::1715632718:
 slime_green.png::CompressedTexture2D::7686100535164420705::1715632718::1715632718::1::::<><>::
 slime_purple.png::CompressedTexture2D::1594926213223922850::1715632718::1715632718::1::::<><>::
 world_tileset.png::CompressedTexture2D::1138039678773044503::1715632718::1715632718::1::::<><>::
-::res://scenes/::1715634617
+::res://scenes/::1715636527
 end_screen.tscn::PackedScene::551037198358767129::1715632718::0::1::::<><>::res://scripts/retry_button.gd<>uid://dkyhand71eyt6::::res://assets/fonts/PixelOperator8-Bold.ttf
-game.tscn::PackedScene::7028127959977919051::1715634543::0::1::::<><>::uid://co80wspr81s38::::res://scenes/player.tscn<>res://scripts/game.gd<>uid://qhjl2n56v1ax::::res://assets/sprites/world_tileset.png<>uid://4g45oin0sgi::::res://scenes/killzone.tscn<>uid://dkyhand71eyt6::::res://assets/fonts/PixelOperator8-Bold.ttf
+game.tscn::PackedScene::7028127959977919051::1715636527::0::1::::<><>::uid://co80wspr81s38::::res://scenes/player.tscn<>res://scripts/game.gd<>uid://qhjl2n56v1ax::::res://assets/sprites/world_tileset.png<>uid://4g45oin0sgi::::res://scenes/killzone.tscn<>uid://dkyhand71eyt6::::res://assets/fonts/PixelOperator8-Bold.ttf
 killzone.tscn::PackedScene::60284642557199796::1715632718::0::1::::<><>::res://scripts/killzone.gd
 music.tscn::PackedScene::442677278612148389::1715634284::0::1::::<><>::uid://ltrd8d8iswr2::::res://assets/music/my_crappy_selfmade_song.mp3
-pipe.tscn::PackedScene::4505094441740003619::1715634543::0::1::::<><>::uid://qhjl2n56v1ax::::res://assets/sprites/world_tileset.png<>res://scripts/pipe.gd<>uid://d4buoqksgreaa::::res://assets/sounds/coin.wav<>uid://brvsaerlvxrm0::::res://assets/sounds/hurt.wav
-player.tscn::PackedScene::5825167825897611233::1715634617::0::1::::<><>::res://scripts/player.gd<>uid://dch6vuwkbwa55::::res://assets/sprites/knight.png<>uid://cmkkefhmsr00e::::res://assets/sounds/jump.wav
+pipe.tscn::PackedScene::4505094441740003619::1715636481::0::1::::<><>::uid://qhjl2n56v1ax::::res://assets/sprites/world_tileset.png<>res://scripts/pipe.gd<>uid://d4buoqksgreaa::::res://assets/sounds/coin.wav<>uid://brvsaerlvxrm0::::res://assets/sounds/hurt.wav
+player.tscn::PackedScene::5825167825897611233::1715636481::0::1::::<><>::res://scripts/player.gd<>uid://dch6vuwkbwa55::::res://assets/sprites/knight.png<>uid://cmkkefhmsr00e::::res://assets/sounds/jump.wav
 ::res://scripts/::1715634490
 game.gd::GDScript::-1::1715634490::0::1::::<>Node2D<>::
 killzone.gd::GDScript::-1::1715632718::0::1::::<>Area2D<>::
